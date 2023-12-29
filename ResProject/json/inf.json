@@ -1,0 +1,120 @@
+[
+
+    {
+      "id": "001",
+      "img": "img/box-03.jpg",
+      "name": "Подарочный бокс с орехами",
+      "price": "119",
+      "category": "Present"
+    },
+    {
+      "id": "002",
+      "img": "img/box-02.jpg",
+      "name": "Подарочный бокс с печеньками",
+      "price": "129",
+      "category": "Present"
+    },
+    {
+      "id": "003",
+      "img": "img/box-03.jpg",
+      "name": "Подарочный бокс с кружкой",
+      "price": "219",
+      "category": "Present"
+    },
+    {
+      "id": "004",
+      "img": "img/menu01.jpg",
+      "name": "Text T-Shirt",
+      "price": "119",
+      "category": "menu"
+    },
+    {
+      "id": "005",
+      "img": "img/menu02.jpg",
+      "name": "Sweater Choker Neck",
+      "price": "319",
+      "category": "menu"
+    },
+    {
+      "id": "006",
+      "img": "img/menu03.jpg",
+      "name": "SJP by Sarah Jessica Parker",
+      "price": "242",
+      "category": "menu"
+    },
+    {
+      "id": "007",
+      "img": "img/salat03.jpg",
+      "name": "ECCO Biom Aex Luxe Hydromax Water-Resistant Cross Trainer",
+      "price": "199",
+      "category": "Salat"
+    },
+    {
+      "id": "008",
+      "img": "img/salat02.jpg",
+      "name": "Nike Air Max Torch 3 Men's Running Shoes",
+      "price": "153",
+      "category": "Salat"
+    },
+    {
+    "id": "009",
+    "img": "img/salat01.jpg",
+    "name": "Printed Shirt with a Bow",
+    "price": "119",
+    "category": "Salat"
+  },{
+    "id": "010",
+    "img": "img/sup01.jpg",
+    "name": "Faded Beach Trousers",
+    "price": "139",
+    "category": "sup"
+  },{
+    "id": "011",
+    "img": "img/sup02.jpg",
+    "name": "Embroidered Hoodie",
+    "price": "89",
+    "category": "sup"
+  },{
+    "id": "012",
+    "img": "img/sup03.jpg",
+    "name": "Bugatchi Men's Long Sleeve Printed Cotton Pointed Collar Shirt",
+    "price": "109",
+    "category": "sup"
+  },{
+    "id": "013",
+    "img": "img/desert03.jpg",
+    "name": "SITKA Gear Men's Hunting Windproof Optifade",
+    "price": "299",
+    "category": "desert"
+  },{
+    "id": "014",
+    "img": "img/desert02.jpg",
+    "name": "Derek Rose Men's Short Sleeve T-Shirt",
+    "price": "119",
+    "category": "desert"    
+  },{
+    "id": "015",
+    "img": "img/desert01.jpg",
+    "name": "LEKODE Men Beach Shorts Drawstring Print Pocket Fashion Casual Swim Pants",
+    "price": "19",
+    "category": "desert"
+  },{
+    "id": "016",
+    "img": "img/drink01.jpg",
+    "name": "Anna by Anuschka Women's Genuine Leather Large Hobo Handbag",
+    "price": "199",
+    "category": "drink"
+  },{
+    "id": "017",
+    "img": "img/drink02.jpg",
+    "name": "Purse Organizer Insert, Felt Bag organizer with zipper",
+    "price": "29",
+    "category": "drink"
+  },{
+    "id": "018",
+    "img": "img/drink03.jpg",
+    "name": "Spyder Mens Pinnacle GTX Ski Glove",
+    "price": "239",
+    "category": "drink"
+  }
+  ]

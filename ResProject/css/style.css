@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner{
+    max-width: 1920px;
+}
+
+.logotipe{
+    display: flex;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    font-size: 20px;
+}
+.img-logotype{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.head-list{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+.head-items{
+    margin-right: 50px;
+    position: relative;
+    left: 300px;
+    font-size: 24px;
+}
+.head-conteiner{
+    padding-top: 25px;
+    background-color: #f3f3f3;
+}
+.buy{
+    border-radius: 20%;
+    border-color: rgb(141, 141, 208);
+    cursor: pointer;
+    position: relative;
+    bottom: 13px;
+}
+.img-buy{
+    width: 60px;
+    height: 45px;
+}
+.img-card-food{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.card-first-food{
+    height: 600px;
+    
+}
+.conteiner-for-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    font-size: 24px;
+    color: #000;
+    right: 380px ;
+    bottom:20px;
+    margin: 20px;
+}
+.card-one{
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+.card-picture{
+    width: 500px;
+}
+
+/*MODAL*/
+.overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.overlay.show{
+    display: flex;
+}
+.modal{
+    max-width: 600px;
+    max-height: 300px;
+    padding: 25px;
+    position: relative;
+    background-color: rgb(200, 150, 125);
+    border-radius: 20px;
+}
+.modal-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 34px;
+    color: #635850;
+}
+.modal-btn{
+    position: absolute;
+    border: none;
+    top:15px;
+    right: 15px;
+    background-color: transparent;
+    font-size: 28px;
+    color: #61544b;
+    cursor: pointer;
+}
+.modal-table{
+    border-collapse: collapse;
+    min-width: 540px;
+}
+.modal-table th{
+    text-align: left;
+    border: 1px solid #4f4844;
+}
+td{
+    display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid #4f4844;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+}
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit ;
+}
+th{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+tfoot{
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/*present*/
+.overlay-present{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-salat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-desert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-drink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.present{
+    display: flex;
+    flex-wrap: wrap;
+}
+.preset-list{
+    display: flex;
+    list-style: none;
+}
+.present-items:not(:last-child){
+    margin-right:50px;
+}
+.present-items{
+    box-shadow:5px 5px 5px 5px rgba(34, 34, 34, 0.282);
+    border-radius: 20px;
+}
+.present-img{
+    min-width: 300px;
+    max-height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.presect-conteiner{
+    min-width: 300px;
+    padding: 20px;
+}
+.present-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.in-box{
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow:2px 2px 2px 2px rgba(34, 34, 34, 0.282);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(179, 60, 60);
+    margin-left: 40px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.in-box:focus{
+    background-color: rgb(179, 60, 60);
+}
+.in-box:hover{
+    background-color: rgb(158, 42, 42);
+}
+.in-box:active{
+    background-color: rgb(125, 31, 31);
+}
+.prise{
+    font-size:24px
+}
+/*show-cart*/
+.show-goods{
+    display: flex;
+}
+.show-goods .special-offers {
+    display: none;
+}
+
+.long-menu {
+    display: none;
+}
+
+.show-goods .long-menu {
+    display: block;
+}
