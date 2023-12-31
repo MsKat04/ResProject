@@ -1,121 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RestProj</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel ="stylesheet" href ="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ResProject</title>
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="head">
-        <main class="head-conteiner conteiner">
-            <div class="logotipe">
-                <img class="img-logotype" src="img/logofood.jpg">
-                <a href="#" class="logotype-head" data-field ="food-logo">YOUR COMPANY</a>
+
+<body id="body">
+	<header class="header">
+			<div class="logo-img">
+				<a href="#" class="logo-link">
+					<img width="128" src="img/logofood.jpg" alt="logo" class="logo-image">
+				</a>
+			</div>
+            <div class="long-goods">
+                <div class="container">
+                        <div class="nav-list-dop">
+                            <nav class="menu-list-none">
+                                <ul class="navigation">
+                                    <li class="navigation-item">
+                                        <a href="#" class="navigation-link" >все меню</a>
+                                    </li>
+                                    <li class="navigation-item">
+                                        <a href="#" class="navigation-link" data-field="category">салаты</a>
+                                    </li>
+                                    <li class="navigation-item">
+                                        <a href="#" class="navigation-link" data-field="category">супы</a>
+                                    </li>
+                                    <li class="navigation-item">
+                                        <a href="#" class="navigation-link" data-field="category">закуски</a>
+                                    </li>
+                                    <li class="navigation-item">
+                                        <a href="#" class="navigation-link" data-field="category">напитки</a>
+                                    </li>
+                                    <li class="navigation-item">
+                                        <a href="#" class="navigation-link" data-field="category">десерты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                </div>
             </div>
-            <ul class="head-list">
-                <li class="head-items">
-                    <a href="#" class ="navigation-items" data-field ="category">Подарочные боксы</a>
-                </li>
-                <li class="head-items">
-                    <a href="#" class ="navigation-items" data-field ="category">Новогоднее меню</a>
-                </li>
-                <li class="head-items">
-                    <a href="#" class ="navigation-items" data-field ="category">Салаты</a>
-                </li>
-                <li class="head-items">
-                    <a href="#" class ="navigation-items" data-field ="category">Супы</a>
-                </li>
-                <li class="head-items">
-                    <a href="#" class ="navigation-items" data-field ="category">Десерты</a>
-                </li>
-                <li class="head-items">
-                    <a href="#" class ="navigation-items" data-field ="category">Напитки</a>
-                </li>
-                <li class="head-items">
-                    <button class="buy">
-                        <img class="img-buy" src="img/buy.jpg">
-                    </button>
-                </li>
-            </ul>
-        </main>
-    </header>
-    <!--<div class="sale container">
-        <div class="sale-cont container">
-            <img class="col-12" src ="img/desert03.jpg">
-        </div>
-    </div>-->
-    <main class="main conteiner special-offers">
-        <div class="card conteiner-for-card">
-            <div class="card-picture">
-                <a href="#" class="card-one">
-                    <img class="img-card-food" src="img/box-01.jpg">
-                    <samp class="text-box">Подарочные&nbspбоксы</samp>
-                </a>
-            </div>    
-            <div class="card-picture">
-                <a href="#" class="card-one">
-                    <img class="img-card-food" src="img/menu01.jpg">
-                    <samp class="text-box">Новогоднее&nbspменю</samp>
-                </a>
-            </div>    
-            <div class="card-picture">
-                <a href="#" class="card-one">
-                    <img class="img-card-food" src="img/salat01.jpg">
-                    <samp class="text-box">Салаты</samp>
-                </a>
-            </div>       
-        </div>
-        <div class="card-two conteiner-for-card">
-            <div class="card-picture">
-                <a href="#" class="card-one">
-                    <img class="img-card-food" src="img/sup01.jpg">
-                    <samp class="text-box">Супы&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</samp>
-                </a>
-            </div>    
-            <div class="card-picture">
-                <a href="#" class="card-one">
-                    <img class="img-card-food" src="img/desert01.jpg">
-                    <samp class="text-box">Десерты</samp>
-                </a>
-            </div>    
-            <div class="card-picture">
-                <a href="#" class="card-one">
-                    <img class="img-card-food" src="img/drink01.jpg">
-                    <samp class="text-box">Напитки</samp>
-                </a>
-            </div> 
-        </div>
-    </main>
-    <div class="overlay" id="modal-cart">
-        <div class="modal">
-        <header class="modal-cart">
-            <h2 class="modal-title">Корзина</h2>
-            <button class="modal-btn"> X </button>
-        </header>
-        <table class="modal-table">
-            <thead>
-                <tr>
-                    <th>Покупка</th>
-                    <th>Цена</th>
-                    <th colspan="3">Количество</th>
-                    <th colspan="2">Сумма</th>
-                </tr>
-              </thead>
-              <tbody class="modal-goods"></tbody>
-              <tfoot>
-                <tr>
-                    <th colspan="5">Сумма покупки:</th>
-                    <th class="modal-sum" colspan="2">0$</th>
-                </tr>
-              </tfoot>
-        </table>
-        </div>
-    </div>
-    <section class="long-menu">
-        <div class="overlay-present conteiner-for-card case">
-         <div class="present">
+			<div class="col-lg-2 col-6 d-flex justify-content-end">
+				<button class="button button-cart">
+					<img class="button-icon" src="img/buy.jpg" alt="icon: cart">
+					<span class="button-text">Товары</span>
+					<span class="button-text cart-count">0</span>
+				</button>
+			</div>
+	</header>
+	<section class="special-offers container">
+		<nav class="menu-list-none fffol">
+			<div class="fffol">
+				<div class="card card-menu">
+                    <div class="present">
+                        <img src="img/box-01.jpg" class="present">
+                    </div>
+					<div class="card-block">
+						<h3 class="card-title">Подарочные боксы</h3>
+					</div>
+				</div>
+			</div>
+		</nav>
+			<div class="fffol">
+				<div class="card">
+                    <div class="present">
+                        <img src="img/menu02.jpg" class="present">
+                    </div>
+					<div class="card-block">
+						<h3 class="card-title">Празничное меню</h3>
+					</div>
+				</div>
+			</div>
+			<div class="fffol menu">
+				<div class="card card-menu navigation-link" data-field="category">
+                    <div class="present">
+                        <img src="img/salat05.jpg" class="present">
+                    </div>
+					<div class="card-block">
+						<h3 class="card-title">все меню</h3>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="long-goods blokirovka">
+		<div class="container">
+			<div class="row align-items-center mb-4">
+				<div class="col-12">
+					<h2 class="section-title category-title"></h2>
+				</div>
+			</div>
+			<div class="row long-goods-list">
+				
+			</div>
+		</div>
+
+	</section>
+	<section class="long-menu-present">
+        <div class="overlay-present">
+         <div class="presentss">
             <ul class="preset-list">
                 <li class="present-items">
                     <img class="present-img" src="img/box-01.jpg">
@@ -125,9 +113,9 @@
                         </div>
                         <div class="present-prise">
                             <samp class="prise">
-                                999p.
+                                1670p.
                             </samp>
-                            <button class="in-box" data-id="001">
+                            <button class="in-box add-to-cart" data-id="010">
                                 В корзину
                             </button>
                         </div>
@@ -141,9 +129,9 @@
                         </div>
                         <div class="present-prise">
                             <samp class="prise">
-                                1199p.
+                                1870p.
                             </samp>
-                            <button class="in-box" data-id="002">
+                            <button class="in-box add-to-cart" data-id="011">
                                 В корзину
                             </button>
                         </div>
@@ -159,7 +147,7 @@
                             <samp class="prise">
                                 1499p.
                             </samp>
-                            <button class="in-box" data-id="003">
+                            <button class="in-box add-to-cart" data-id="012">
                                 В корзину
                             </button>
                         </div>
@@ -168,278 +156,47 @@
             </ul>
         </div>
         </div>   
-        <div class="overlay-menu conteiner-for-card case">
-        <div class="present">
-            <ul class="preset-list">
-                <li class="present-items">
-                    <img class="present-img" src="img/menu01.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с орехами
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                999p.
-                            </samp>
-                            <button class="in-box" data-id="004">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/menu02.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с печеньками
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1199p.
-                            </samp>
-                            <button class="in-box" data-id="005">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/menu03.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с кружкой
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1499p.
-                            </samp>
-                            <button class="in-box" data-id="006">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-            </ul>
-        </div>
-        </div>
-        <div class="overlay-salat conteiner-for-card case">
-        <div class="present">
-            <ul class="preset-list">
-                <li class="present-items">
-                    <img class="present-img" src="img/salat01.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с орехами
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                999p.
-                            </samp>
-                            <button class="in-box" data-id="007">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/salat02.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с печеньками
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1199p.
-                            </samp>
-                            <button class="in-box" data-id="008">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/salat03.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с кружкой
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1499p.
-                            </samp>
-                            <button class="in-box" data-id="009">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-            </ul>
-        </div>
-        </div>  
-        <div class="overlay-sup conteiner-for-card case">
-        <div class="present">
-            <ul class="preset-list">
-                <li class="present-items">
-                    <img class="present-img" src="img/sup01.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с орехами
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                999p.
-                            </samp>
-                            <button class="in-box" data-id="010">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/sup02.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с печеньками
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1199p.
-                            </samp>
-                            <button class="in-box" data-id="011">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/sup03.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с кружкой
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1499p.
-                            </samp>
-                            <button class="in-box" data-id="012">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-            </ul>
-        </div>
-        </div>
-        <div class="overlay-desert conteiner-for-card case">
-        <div class="present">
-            <ul class="preset-list">
-                <li class="present-items">
-                    <img class="present-img" src="img/desert01.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с орехами
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                999p.
-                            </samp>
-                            <button class="in-box" data-id="013">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/desert02.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с печеньками
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1199p.
-                            </samp>
-                            <button class="in-box" data-id="014">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/desert03.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с кружкой
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1499p.
-                            </samp>
-                            <button class="in-box" data-id="015">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-            </ul>
-        </div>
-        </div>
-        <div class="overlay-drink conteiner-for-card case">
-        <div class="present">
-            <ul class="preset-list">
-                <li class="present-items">
-                    <img class="present-img" src="img/drink01.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с орехами
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                999p.
-                            </samp>
-                            <button class="in-box" data-id="016">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/drink02.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с печеньками
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1199p.
-                            </samp>
-                            <button class="in-box" data-id="017">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-                <li class="present-items">
-                    <img class="present-img" src="img/drink03.jpg">
-                    <div class="presect-conteiner">
-                        <div class="present-title">
-                            Подарочный бокс с кружкой
-                        </div>
-                        <div class="present-prise">
-                            <samp class="prise">
-                                1499p.
-                            </samp>
-                            <button class="in-box" data-id="018">
-                                В корзину
-                            </button>
-                        </div>
-                    </div>    
-                </li>
-            </ul>
-        </div>
-        </div>  
-    </section>         
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<hr class="footer-line mt-4 mb-4">
+			<div class="row justify-content-between">
+				<div class="col-lg-4 col-sm-9">
+					<span class="footer-text">г. Екатеринбург, ул. XXX</span>
+					<span class="footer-text footer-tel">+xxx</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay" id="modal-cart">
+		<div class="modal">
+			<header class="modal-header">
+				<h2 class="modal-title">Товары</h2>
+				<button class="modal-close">x</button>
+			</header>
+			<table class="cart-table">
+				<thead>
+				<tr>
+					<th>Покупка</th>
+					<th>Цена</th>
+					<th colspan="3">кол-во</th>
+					<th colspan="2">Итог</th>
+				</tr>
+				</thead>
+				<tbody class="cart-table__goods">
+					
+				</tbody>
+				<tfoot>
+				<tr>
+					<th colspan="5">Сумма покупки:</th>
+					<th class="card-table__total" colspan="2">0$</th>
+				</tr>
+
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
-<script src ="js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
 </html>
